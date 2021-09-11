@@ -4,7 +4,7 @@
       <v-col v-for="item, key in column" :key="item.id" class="v-col__border">
         <v-card elevation="15" class="pa-4">
           <div v-if="item.status == 'active'">
-            <VideoPlayer :options="item" />
+            <AssetPlayer :options="item" />
             <v-spacer></v-spacer>
             <v-btn
                 class="ma-1"
