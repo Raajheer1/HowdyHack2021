@@ -22,13 +22,14 @@
 
     <v-col cols="4">
     </v-col>
+  </v-row>
 </template>
 
 <script>
 import axios from 'axios';
 
 export default {
-  name: "Login"
+  name: "Login",
   data() {
     return {
       password: null
@@ -49,7 +50,7 @@ export default {
             text: 'Invalid login credentials, please try again.'
           })
         }
-      }
+      })
     }
   }
 }

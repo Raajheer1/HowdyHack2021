@@ -1,5 +1,7 @@
 <template>
-  $END$
+  <v-row>
+
+  </v-row>
 </template>
 
 <script>
