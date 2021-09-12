@@ -8,18 +8,16 @@
         app
         clipped-right
         flat
-        height="72"
+        height="75"
         v-if="isStream"
         >
-        <h1>
+        <v-spacer></v-spacer>
+        <h1 class="pl-10">
           <div v-if="isOverview">
             Overview
           </div>
           <div v-else-if="isAssets">
             Assets
-          </div>
-          <div v-else-if="!isLogin">
-            Login
           </div>
         </h1>
         <v-spacer></v-spacer>
@@ -32,8 +30,8 @@
         app
         width="200">
         <v-sheet
-          color="grey"
-          height="120"
+          color="#363636"
+          height="75"
           width="100%"
           >
           <div class="text-center pt-6">
