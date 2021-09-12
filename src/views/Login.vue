@@ -7,15 +7,17 @@
       <v-col cols="12">
         <v-card color="#1a1a1a" dark width="450px" class="pa-4">
           <v-card-text class="text-center">
-            <h1>HowdyHack2021</h1>
+            <h1>Concert Controller</h1>
             <v-text-field
               v-model="password"
+              type="password"
               label="Password"
               outlined
               color="white"
               class="pt-3"
               >
             </v-text-field>
+            <p>Demo Password: HowdyHack2021</p>
             <v-btn @click="login">
               Login
             </v-btn>

@@ -5,31 +5,34 @@
         <v-card elevation="15" class="pa-4">
           <div v-if="item.status == 'active'">
             <VideoPlayer :options="item" />
-            <v-spacer></v-spacer>
-            <v-btn
-              class="ma-1"
-              color="success"
-              plain
-              @click="copyURL(item)"
-              >
-              PlaybackURL
-            </v-btn>
-            <v-btn
-                class="ma-1"
-                color="error"
-                plain
-                @click="delVideo(item)"
-            >
-              Delete
-            </v-btn>
-            <v-btn
-                class="ma-1"
-                color="success"
-                plain
-                @click="copy(item)"
-            >
-              Streamkey
-            </v-btn>
+            <v-row class="text-center">
+              <v-col cols="12" class="mt-3">
+                <v-btn
+                  class="ma-1"
+                  color="success"
+                  plain
+                  @click="copyURL(item)"
+                  >
+                  PlaybackURL
+                </v-btn>
+                <v-btn
+                    class="ma-1"
+                    color="error"
+                    plain
+                    @click="delVideo(item)"
+                >
+                  Delete
+                </v-btn>
+                <v-btn
+                    class="ma-1"
+                    color="success"
+                    plain
+                    @click="copy(item)"
+                >
+                  Streamkey
+                </v-btn>
+              </v-col>
+            </v-row>
           </div>
           <div v-else class="text-center">
             {{ item.status[0].toUpperCase() + item.status.substring(1) }} Stream {{ value * 3 + key + 1}}

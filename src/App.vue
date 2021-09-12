@@ -32,7 +32,7 @@
         >
         <div class="text-center pt-6">
           <h1 style="color: white">
-            HowdyHack2021
+            Controller
           </h1>
         </div>
       </v-sheet>
