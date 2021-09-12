@@ -10,7 +10,7 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
-    appURL: "https://howdy.raajpatel.dev/",
+    appURL: "https://howdyapi.raajpatel.dev/",
     login: false,
     drawer: null,
     assets: null,
