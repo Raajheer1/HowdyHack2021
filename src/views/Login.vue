@@ -1,7 +1,7 @@
 <template>
   <v-row no-gutters class="pt-3">
     <v-overlay
-        :value=trans
+        :value=true
         :opacity=1
     >
       <v-col cols="12">
@@ -39,10 +39,10 @@ export default {
   },
   methods: {
     login(){
-      this.trans = !this.trans;
       axios.get(`${this.$store.state.appURL}login/${this.password}`).then(response => {
         if(response.data == true){
           this.$store.state.login = true;
+          this.trans = !this.trans;
           this.$router.push("overview");
           this.$notify({
             type: 'success',
